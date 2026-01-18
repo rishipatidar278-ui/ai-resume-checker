@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Resume Checker Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📄 AI Resume Checker Bot</h1>
+    <p class="subtitle">Upload or paste your resume text</p>
+
+    <textarea id="resumeText" placeholder="Paste your resume text here..."></textarea>
+
+    <button onclick="analyzeResume()">Analyze Resume</button>
+
+    <div class="card">
+        <h2>📊 ATS Score</h2>
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="scoreText">Score: 0 / 100</p>
+    </div>
+
+    <div class="card">
+        <h2>✅ Skills Found</h2>
+        <p id="skillsFound">—</p>
+    </div>
+
+    <div class="card">
+        <h2>🛠 Suggestions</h2>
+        <ul id="suggestions"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
